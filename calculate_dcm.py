@@ -1,7 +1,7 @@
 ''' Reads the height between the molecule and the surafce '''
 
 # first argument is geometry file
-#second argument is number of taoms in the first layer
+#second argument is number of atoms in the first layer
 
 
 from ase.build import fcc111, add_adsorbate
