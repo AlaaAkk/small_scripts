@@ -3,6 +3,8 @@
 # First argument is geometry file
 # Second argument is number of taoms in the first layer
 # Third argument is the layer's specie
+# example: python3 calculate_dcm.py geometry.in 36 Ag
+
 
 
 from ase.build import fcc111, add_adsorbate
