@@ -3,7 +3,8 @@
 # First argument is geometry file of substrate
 # Second argument is metal
 # third argument is lattice constant
-# example: python3 calculate_dcm.py geometry.in 36 Ag
+# example:  python3 cal_strain.py mos2.in Au 4.13
+
 
 from ase import Atoms
 import numpy
@@ -56,34 +57,3 @@ def _main(filename,n_atoms,metal):
      print('T percentage is', abs((1-det)*100), '%')
 if __name__ == "__main__":
       _main(str(sys.argv[1]),str(sys.argv[2]),float(sys.argv[3]))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-######################################################33
