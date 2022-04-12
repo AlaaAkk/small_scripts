@@ -1,7 +1,7 @@
 ''' Reads the height between the molecule and the surafce '''
 
 # First argument is geometry file
-# Second argument is number of taoms in the first layer
+# Second argument is number of atoms in the first layer
 # Third argument is the layer's specie
 # example: python3 calculate_dcm.py geometry.in 36 Ag
 
@@ -30,6 +30,6 @@ def _main(filename,n_atoms,metal):
     avg=s/(n_atoms)
     print(center[2])
     z=get_dist(avg, center[2])
-    print('The height is: ', z)
+    print('The adsorption height is: ', z)
 if __name__ == "__main__":
       _main(str(sys.argv[1]),int(sys.argv[2]),str(sys.argv[3]))
